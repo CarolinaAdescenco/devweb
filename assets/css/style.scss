@@ -1,0 +1,139 @@
+// Cores
+// Laranja
+$laranja: #ff6900;
+$laranja_escuro: lighten(desaturate($laranja, 45.22), 4.9);
+$verde: #062832;
+$verde_claro: lighten(desaturate($verde, 15.95), 10);
+$preto: #101010;
+$cinza: #818181;
+$branco: #fafafa;
+
+// Fontes
+
+@mixin font-size($size) {
+  font-size: $size + px;
+  font-size: ($size/20) + rem;
+}
+
+@mixin input-placeholder-color($color) {
+  &::-webkit-input-placeholder {
+    color: $color !important;
+  }
+  &:-moz-placeholder {
+    color: $color !important;
+  }
+  &::-moz-placeholder {
+    color: $color !important;
+  }
+  &:-ms-input-placeholder {
+    color: $color !important;
+  }
+  &::-ms-placeholder {
+    color: $color !important;
+  }
+  &::placeholder {
+    color: $color !important;
+  }
+}
+
+/*Elementos que sofrerão transições*/
+a,
+button,
+figcaption,
+.pagination,
+.nav-item,
+.nav-link,
+.btn,
+.servico,
+.servico::before,
+nav {
+  transition: 0.3s all ease-out;
+  -o-transition: 0.3s all ease-out;
+  -moz-transition: 0.3s all ease-out;
+  -webkit-transition: 0.3s all ease-out;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  height: auto;
+  border-radius: 0;
+}
+
+textarea {
+  max-height: 200px;
+}
+
+button:focus {
+  outline: none;
+}
+
+figure {
+  position: relative;
+
+  figcaption {
+    align-items: center;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+html,
+body {
+  background-color: $branco;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  height: 100%;
+  line-height: 1;
+}
+
+@media (min-width: 1200px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+@media (max-width: 1199px) {
+  html,
+  body {
+    font-size: 15px;
+  }
+}
+@media (max-width: 991px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  html,
+  body {
+    font-size: 13px;
+  }
+}
+
+/*Modificações*/
+.wpcf7-response-output {
+  color: inherit;
+  font-size: 18px;
+  text-align: center;
+  padding: 1rem !important;
+  font-weight: 400;
+  border-width: 6px !important;
+  margin: 0;
+}
+
+.btn {
+  white-space: normal;
+}
