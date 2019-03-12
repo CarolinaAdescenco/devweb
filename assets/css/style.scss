@@ -1,10 +1,4 @@
 // Cores
-// Laranja
-$laranja: #ff6900;
-$laranja_escuro: lighten(desaturate($laranja, 45.22), 4.9);
-$verde: #062832;
-$verde_claro: lighten(desaturate($verde, 15.95), 10);
-$preto: #101010;
 $cinza: #818181;
 $branco: #fafafa;
 
@@ -136,4 +130,18 @@ body {
 
 .btn {
   white-space: normal;
+}
+
+.section-map{
+  iframe{
+    width: 100%;
+    height: 300px;
+  }
+}
+
+.title-page{
+  background-color: $cinza;
+  color: $branco;
+  text-align: center;
+  padding: 3rem 0;
 }

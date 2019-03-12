@@ -1,0 +1,4 @@
+﻿Title da Página: <title><?php bloginfo('title').wp_title()?></title>
+
+Início:  <?php if ( have_posts() ) { while ( have_posts() ) { the_post() ?>
+Fim:   <?php } wp_reset_postdata(); } ?>

@@ -81,4 +81,14 @@ body {
 .btn {
   white-space: normal; }
 
+.section-map iframe {
+  width: 100%;
+  height: 300px; }
+
+.title-page {
+  background-color: #818181;
+  color: #fafafa;
+  text-align: center;
+  padding: 3rem 0; }
+
 /*# sourceMappingURL=style.css.map */
