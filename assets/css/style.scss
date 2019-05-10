@@ -1,6 +1,8 @@
 // Cores
 $cinza: #818181;
 $branco: #fafafa;
+$dots-slick-active: #000;
+$dots-slick: #aaa;
 
 // Fontes
 
@@ -43,7 +45,7 @@ $branco: #fafafa;
         font-size: 0.7rem;
         font-weight: 900;
         content: "\f111";
-        color: $cinza;
+        color: $dots-slick;
       }
     }
   }
@@ -51,7 +53,7 @@ $branco: #fafafa;
   li.slick-active{
     button{
       &:before{
-        color: $verde-padrao;
+        color: $dots-slick-active;
       }
     }
   }
