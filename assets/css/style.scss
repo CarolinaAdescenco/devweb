@@ -3,6 +3,7 @@ $cinza: #818181;
 $branco: #fafafa;
 $dots-slick-active: #000;
 $dots-slick: #aaa;
+$azul: #427dba;
 
 // Fontes
 
@@ -15,32 +16,38 @@ $dots-slick: #aaa;
   &::-webkit-input-placeholder {
     color: $color !important;
   }
+
   &:-moz-placeholder {
     color: $color !important;
   }
+
   &::-moz-placeholder {
     color: $color !important;
   }
+
   &:-ms-input-placeholder {
     color: $color !important;
   }
+
   &::-ms-placeholder {
     color: $color !important;
   }
+
   &::placeholder {
     color: $color !important;
   }
 }
 
 /*Alterações no Slick*/
-.slick-next, .slick-prev{
+.slick-next,
+.slick-prev {
   z-index: 1;
 }
 
-.slick-dots{
-   li{
-    button{
-      &:before{
+.slick-dots {
+  li {
+    button {
+      &:before {
         font-family: 'Font Awesome 5 Free';
         font-size: 0.7rem;
         font-weight: 900;
@@ -50,18 +57,19 @@ $dots-slick: #aaa;
     }
   }
 
-  li.slick-active{
-    button{
-      &:before{
+  li.slick-active {
+    button {
+      &:before {
         color: $dots-slick-active;
       }
     }
   }
 }
 
-.slick-next{
+.slick-next {
   right: 5%;
-  &:before{    
+
+  &:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 1.5rem;
@@ -69,9 +77,10 @@ $dots-slick: #aaa;
   }
 }
 
-.slick-prev{
+.slick-prev {
   left: 5%;
-  &:before{
+
+  &:before {
     font-family: 'Font Awesome 5 Free';
     font-weight: 900;
     font-size: 1.5rem;
@@ -105,7 +114,7 @@ a:focus {
   font-weight: 300;
 }
 
-p{
+p {
   color: $cinza;
   font-size: 1.15rem;
   font-weight: 300;
@@ -141,9 +150,10 @@ figure {
   }
 }
 
-section{
+section {
   padding: 1.5rem;
-  @media(min-width: 992px){
+
+  @media(min-width: 992px) {
     padding: 3rem 0;
   }
 }
@@ -158,24 +168,31 @@ body {
 }
 
 @media (min-width: 1200px) {
+
   html,
   body {
     font-size: 16px;
   }
 }
+
 @media (max-width: 1199px) {
+
   html,
   body {
     font-size: 15px;
   }
 }
+
 @media (max-width: 991px) {
+
   html,
   body {
     font-size: 14px;
   }
 }
+
 @media (max-width: 768px) {
+
   html,
   body {
     font-size: 13px;
@@ -198,9 +215,62 @@ body {
   border-radius: 0;
 }
 
-.section-map{
-  iframe{
+.section-map {
+  iframe {
     width: 100%;
     height: 300px;
+  }
+}
+
+header {
+  // position: absolute;
+
+  a {
+    color: $branco;
+    padding: 0 .3rem;
+  }
+
+  i {
+    color: $branco;
+  }
+
+  .nav-item {
+    .nav-link {
+      padding: 1rem !important;
+      color: $cinza;
+
+      &:hover,
+      &:active,
+      &:focus {
+        background-color: $azul;
+        color: $branco;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    margin: 0;
+    padding: 0;
+    background-color: $azul;
+    border: none;
+    border-radius: 0;
+
+    .dropdown-item {
+      color: $branco;
+      font-weight: 300;
+      padding: .8rem;
+
+      &:hover {
+        background-color: darken($azul, 15);
+      }
+    }
+  }
+}
+
+.separator {
+  &:before {
+    content: "|";
+    margin: 0 .8rem;
+    color: $branco;
   }
 }
